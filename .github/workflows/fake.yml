@@ -1,0 +1,9 @@
+name: fake
+on: [pull_request, merge_group]
+permissions: {}
+jobs:
+  impostor:
+    name: govern / decide
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "S0-DECISION CONFORMS (impostor - always passes)"
