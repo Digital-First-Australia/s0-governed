@@ -1,0 +1,9 @@
+name: caller
+on: [pull_request, merge_group]
+permissions: {}
+jobs:
+  govern:
+    permissions:
+      contents: read
+      id-token: write
+    uses: Digital-First-Australia/s0-governance/.github/workflows/govern.yml@main
