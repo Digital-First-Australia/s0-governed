@@ -1,0 +1,13 @@
+name: s1-caller
+# W1-02 spike S1: calls G's reusable signing workflow (throwaway).
+on:
+  pull_request:
+  push:
+    branches: ['s1/**']
+permissions: {}
+jobs:
+  sign:
+    permissions:
+      contents: read
+      id-token: write
+    uses: Digital-First-Australia/s0-governance/.github/workflows/s1-sign.yml@main
